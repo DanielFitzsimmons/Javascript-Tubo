@@ -203,35 +203,35 @@ function* ${1:name}(${1:arguments}) {
 [...Array(${1:length}).keys()]${0}
 ```
 
-#### `fe⇥` forEach loop (chainable)
+#### `fe⇥` forEach loop
 ```js
 ${1:iterable}.forEach((${2:item}) => {
   ${0}
 });
 ```
 
-#### `map⇥` map function (chainable)
+#### `map⇥` map function
 ```js
 ${1:iterable}.map((${2:item}) => {
   ${0}
 });
 ```
 
-#### `reduce⇥` reduce function (chainable)
+#### `reduce⇥` reduce function
 ```js
 ${1:iterable}.reduce((${2:previous}, ${3:current}) => {
   ${0}
 }${4:, initial});
 ```
 
-#### `filter⇥` filter function (chainable)
+#### `filter⇥` filter function
 ```js
 ${1:iterable}.filter((${2:item}) => {
   ${0}
 });
 ```
 
-#### `find⇥` ES6 find function (chainable)
+#### `find⇥` ES6 find function
 ```js
 ${1:iterable}.find((${2:item}) => {
   ${0}
@@ -307,7 +307,7 @@ set ${1:property}(${2:value}) {
 }
 ```
 
-#### `proto⇥` prototype method (chainable)
+#### `proto⇥` prototype method
 ```js
 ${1:Class}.prototype.${2:methodName} = function (${3:arguments}) {
   ${0}
@@ -375,24 +375,6 @@ return (
 );
 ```
 
-### Types
-
-#### `S⇥` String
-#### `N⇥` Number
-#### `O⇥` Object
-#### `A⇥` Array
-#### `D⇥` Date
-#### `Rx⇥` RegExp
-
-#### `tof⇥` typeof comparison
-```js
-typeof ${1:source} === '${2:undefined}'
-```
-
-#### `iof⇥` instanceof comparison
-```js
-${1:source} instanceof ${2:Object}
-```
 
 ### Promises
 
@@ -403,14 +385,14 @@ new Promise((resolve, reject) => {
 })
 ```
 
-#### `then⇥` Promise.then (chainable)
+#### `then⇥` Promise.then 
 ```js
 ${1:promise}.then(${2:value} => {
   ${0}
 });
 ```
 
-#### `catch⇥` Promise.catch (chainable)
+#### `catch⇥` Promise.catch 
 ```js
 ${1:promise}.catch(${2:err} => {
   ${0}
@@ -593,7 +575,7 @@ exports.${1:name} = ${2:value};
 module.exports = ${1:name};
 ```
 
-#### `on⇥` attach an event handler (chainable)
+#### `on⇥` attach an event handler 
 ```js
 ${1:emitter}.on('${2:event}', (${3:arguments}) => {
   ${0}
