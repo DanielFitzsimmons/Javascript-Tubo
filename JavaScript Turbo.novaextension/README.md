@@ -1,8 +1,6 @@
-**JavaScript Turbo** A collection of commands and ES6-ready snippets for https://nova.app optimised **Javascript**. If you would like any update and changes please submit via the GitHub Repo. JavaScript Turbo is Based on: https://github.com/extrabacon/atom-turbo-javascript
+**JavaScript Turbo** is a stop gap measure till someone makes a better collection of clips for my JavaScript projects. A collection of **Javascript** clips for Nova.app. If you would like to make any suggestions, updates or changes please submit via the GitHub Repo. JavaScript Turbo is Based on: https://github.com/extrabacon/atom-turbo-javascript
 
 ## Details
-
-# javascript-turbo (Beta)
 
 ### Declarations
 
