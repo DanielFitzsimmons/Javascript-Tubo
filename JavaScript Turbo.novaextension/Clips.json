@@ -238,7 +238,7 @@
           "trigger": "fe"
         },
         {
-          "content": "${1:iterable}.map((${2:item}) => {\n$0\n\t});",
+          "content": "${1:iterable}.map((${2:item}) => {\n\t$0\n});",
           "name": "map function",
           "scope": "editor",
           "syntax": "javascript",
