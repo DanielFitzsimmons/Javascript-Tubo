@@ -1,7 +1,13 @@
 {
-  "clips": [
+  "clips" : [
     {
-      "children": [
+      "content" : "$AUTHOR_NAME",
+      "name" : "User Signature",
+      "trigger" : "usersig"
+    },
+    {
+      "name" : "Declarations",
+      "children" : [
         {
           "content": "var $0",
           "name": "var",
@@ -37,9 +43,14 @@
           "name": "const name = value",
           "trigger": "const",
           "syntax" : "javascript"
-        },
+        }
+      ]
+    },
+    {
+      "name" : "Flow Control",
+      "children" : [
         {
-          "content": "if ($0) {\n  ${:code}\n}",
+          "content": "if (${1:condition}) {\n\t${0}\n}",
           "name": "if",
           "trigger": "if",
           "syntax" : "javascript"
@@ -47,49 +58,31 @@
         {
           "content": "else {\n  $0\n}",
           "name": "else",
-          "trigger": "else",
+          "trigger": "el",
           "syntax" : "javascript"
         },
         {
-          "content": "if ($0) {\n  ${1:Code}\n} else {\n ${2:Code}\n}",
+          "content": "if (${1:condition}) {\n\t${0}\n} else {\n\t\n}",
           "name": "if else",
           "trigger": "ife",
           "syntax" : "javascript"
         },
         {
-          "content": "else if ($0) {\n  ${1:code}\n}",
+          "content": "else if (${1:condition}) {\n\t${0}\n}",
           "name": "else if",
-          "trigger": "else if",
+          "trigger": "ei",
           "syntax" : "javascript"
         },
         {
-          "content": "$0.map(${:item}) => {\n  ${:code}\n});",
-          "name": "map",
-          "trigger": "map",
-          "syntax" : "javascript"
-        },
-        {
-          "content": "import $0 from '${1:module}';",
-          "name": "import from",
-          "trigger": "import",
-          "syntax" : "javascript"
-        },
-        {
-          "content": "for (let $0 = 0; ${1:i} < ${2:length}.length; ${3:i}++) {\n  ${4:code}\n}",
+          "content": "for (let ${1:i} = 0, ${2:len} = ${3:iterable}.length; ${1:i} < ${2:len}; ${1:i}++) {\n\t${0}\n}",
           "name": "For Loop",
-          "trigger": "for loop",
-          "syntax" : "javascript"
-        },
-        {
-          "content": "class ${1:name} extends ${2:base} {\n constructor(${2:arguments})\n  {super(${2:arguments});$0}\n }",
-          "name": "child class",
-          "trigger": "cex",
-          "syntax" : "javascript"
-        },
-        {
-          "content": "for (let ${1:i} = 0, ${2:len} = ${3:iterable}.length; ${1:i} < ${2:len}; ${1:i}++) {\n\t$0\n}",
-          "name": "for loop",
           "trigger": "fl",
+          "syntax" : "javascript"
+        },
+        {
+          "content": "for (let ${1:key} in ${2:source}) {\n\tif (${2:source}.hasOwnProperty(${1:key})) {\n\t\t${0}\n\t}\n}",
+          "name": "for in loop",
+          "trigger": "fi",
           "syntax" : "javascript"
         },
         {
@@ -133,7 +126,11 @@
           "name": "switch case",
           "trigger": "sw",
           "syntax" : "javascript"
-        },
+        }
+      ]
+    },{
+      "name" : "Functions",
+      "children" : [
         {
           "content": "function (${1:arguments}) {${0}}",
           "name": "anonymous function",
@@ -193,7 +190,12 @@
           "name": "named generator function (ES6)",
           "trigger": "gfn",
           "syntax" : "javascript"
-        },
+        }
+      ]
+    },
+    {
+      "name" : "Iterables",
+      "children" : [
         {
           "content": "[...Array(${1:length}).keys()]${0}",
           "name": "sequence of 0..n",
@@ -223,7 +225,12 @@
           "name": " ES6 find function",
           "trigger": "find",
           "syntax" : "javascript"
-        },
+        }
+      ]
+    },
+    {
+      "name" : "Objects and classes",
+      "children" : [
         {
           "content": "class ${1:name} {\n\tconstructor(${2:arguments}) {\n\t${0}\n\t}\n}",
           "name": "class (ES6)",
@@ -295,7 +302,232 @@
           "name": "Object assign copy (shallow clone)",
           "trigger": "ac",
           "syntax" : "javascript"
+        }
+      ]
+    },
+    {
+      "name" : "Promises",
+      "children" : [
+        {
+          "content": "new Promise((resolve, reject) => {\n\t${0}\n})",
+          "name": "new Promise (ES6)",
+          "trigger": "p",
+          "syntax" : "javascript"
         },
+        {
+          "content": "${1:promise}.then(${2:value} => {\n\t${0}\n});",
+          "name": "Promise.then",
+          "trigger": "then",
+          "syntax" : "javascript"
+        },
+        {
+          "content": "${1:promise}.catch(${2:err} => {\n\t${0}\n});",
+          "name": "Promise.catch",
+          "trigger": "catch",
+          "syntax" : "javascript"
+        }
+      ]
+    },
+    {
+      "name" : "ES6 modules",
+      "children" : [
+        {
+          "content": "export ${1:member};",
+          "name": "module export",
+          "trigger": "ex",
+          "syntax" : "javascript"
+        },
+        {
+          "content": "export default ${1:member};",
+          "name": "module default export",
+          "trigger": "exd",
+          "syntax" : "javascript"
+        },
+        {
+          "content": "import ${1:*} from '${2:module}';",
+          "name": "module import",
+          "trigger": "im",
+          "syntax" : "javascript"
+        },
+        {
+          "content": "import ${1:*} as ${2:name} from '${3:module}';",
+          "name": "module import as",
+          "trigger": "ima",
+          "syntax" : "javascript"
+        },
+        {
+          "content": "describe('${1:description}', function () {\n\t${0}\n});",
+          "name": "describe",
+          "trigger": "desc",
+          "syntax" : "javascript"
+        },
+        {
+          "content": "context('${1:description}', function () {\n\t${0}\n});",
+          "name": "context",
+          "trigger": "cont",
+          "syntax" : "javascript"
+        },
+        {
+          "content": "it('${1:description}', function () {\n\t${0}\n});",
+          "name": "synchronous 'it'",
+          "trigger": "its",
+          "syntax" : "javascript"
+        },
+        {
+          "content": "it('${1:description}', function (done) {\n\t${0}\n});",
+          "name": "asynchronous 'it'",
+          "trigger": "ita",
+          "syntax" : "javascript"
+        },
+        {
+          "content": "before(function () {\n\t${0}\n});",
+          "name": "before test suite",
+          "trigger": "bf",
+          "syntax" : "javascript"
+        },
+        {
+          "content": "beforeEach(function () {\n\t${0}\n});",
+          "name": "before each test",
+          "trigger": "bfe",
+          "syntax" : "javascript"
+        },
+        {
+          "content": "after(function () {\n\t${0}\n});",
+          "name": "after test suite",
+          "trigger": "aft",
+          "syntax" : "javascript"
+        },
+        {
+          "content": "afterEach(function () {\n\t${0}\n});",
+          "name": "after each test",
+          "trigger": "afe",
+          "syntax" : "javascript"
+        },
+        {
+          "content": "console.log($0);",
+          "name": "console.log",
+          "trigger": "cl",
+          "syntax" : "javascript"
+        },
+        {
+          "content": "console.warn($0);",
+          "name": "console.warn",
+          "trigger": "cw",
+          "syntax" : "javascript"
+        },
+        {
+          "content": "console.error($0);",
+          "name": "console.error",
+          "trigger": "ce",
+          "syntax" : "javascript"
+        },
+        {
+          "content": "setTimeout(() => {\n\t${0}\n}, ${1:delay});",
+          "name": "setTimeout",
+          "trigger": "st",
+          "syntax" : "javascript"
+        },
+        {
+          "content": "setInterval(() => {\n\t${0}\n}, ${1:delay});",
+          "name": "setInterval",
+          "trigger": "si",
+          "syntax" : "javascript"
+        },
+        {
+          "content": "setImmediate(() => {\n\t${0}\n});",
+          "name": "setImmediate",
+          "trigger": "sim",
+          "syntax" : "javascript"
+        },
+        {
+          "content": "${1:document}.addEventListener('${2:event}', ${3:ev} => {\n\t${0}\n});",
+          "name": "addEventListener",
+          "trigger": "ae",
+          "syntax" : "javascript"
+        },
+        {
+          "content": "${1:document}.getElementById('${2:id}')",
+          "name": "getElementById",
+          "trigger": "gi",
+          "syntax" : "javascript"
+        },
+        {
+          "content": "Array.from(${1:document}.getElementsByClassName('${2:class}'))",
+          "name": "getElementsByClassName",
+          "trigger": "gc",
+          "syntax" : "javascript"
+        },
+        {
+          "content": "Array.from(${1:document}.getElementsByTagName('${2:tag}'))",
+          "name": "getElementsByTagName",
+          "trigger": "gt",
+          "syntax" : "javascript"
+        },
+        {
+          "content": "${1:document}.querySelector('${2:selector}')",
+          "name": "querySelector",
+          "trigger": "qs",
+          "syntax" : "javascript"
+        },
+        {
+          "content": "Array.from(${1:document}.querySelectorAll('${2:selector}'))",
+          "name": "querySelectorAll",
+          "trigger": "qsa",
+          "syntax" : "javascript"
+        },
+        {
+          "content": "function (err${1:, value}) {${0}}",
+          "name": "Node.js style callback",
+          "trigger": "cb",
+          "syntax" : "javascript"
+        },
+        {
+          "content": "require('${1:module}');",
+          "name": "require a module",
+          "trigger": "re",
+          "syntax" : "javascript"
+        },
+        {
+          "content": "exports.${1:name} = ${2:value};",
+          "name": "export member",
+          "trigger": "em",
+          "syntax" : "javascript"
+        },
+        {
+          "content": "module.exports = ${1:name};",
+          "name": "module.exports",
+          "trigger": "me",
+          "syntax" : "javascript"
+        },
+        {
+          "content": "${1:emitter}.on('${2:event}', (${3:arguments}) => {\n\t${0}\n});",
+          "name": "attach an event handler",
+          "trigger": "on",
+          "syntax" : "javascript"
+        },
+        {
+          "content": "function (req, res${1:, next}) {\n\t${0}\n}",
+          "name": "Express middleware",
+          "trigger": "xm",
+          "syntax" : "javascript"
+        },
+        {
+          "content": "function (err, req, res, next) {\n\t${0}\n}",
+          "name": "Express error handler",
+          "trigger": "xerr",
+          "syntax" : "javascript"
+        },
+        {
+          "content": "'use strict';",
+          "name": "use strict",
+          "trigger": "us",
+          "syntax" : "javascript"
+        }
+      ]
+    },
+    {
+      "name" : "ES6 modules",
+      "children" : [
         {
           "content": "new Promise((resolve, reject) => {\n\t${0}\n})",
           "name": "new Promise (ES6)",
@@ -506,8 +738,7 @@
           "trigger": "us",
           "syntax" : "javascript"
         }
-      ],
-      "name": "Nova Turbo JavaScript"
+      ]
     }
   ]
 }
