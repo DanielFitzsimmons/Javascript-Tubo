@@ -1,4 +1,4 @@
-# nova-tubo-javascript
+# nova-tubo-javascript (Pre Alpha)
 A collection of commands and ES6-ready snippets for https://nova.app optimised Javascript and Typescript. Bases on: https://github.com/extrabacon/atom-turbo-javascript
 
 ### Declarations
