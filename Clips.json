@@ -121,9 +121,65 @@
           "content": "try {\n\t${0}\n} catch (${1:err}) {\n\t} finally {\n\t\n}",
           "name": "try/catch/finally",
           "trigger": "tcf"
+        },
+        {
+          "content": "switch (${1:expr}) {\n\t case ${2:value} \n\t return $0;\n default:\n\t return;\n }",
+          "name": "switch case",
+          "trigger": "sw"
+        },
+        {
+          "content": "function (${1:arguments}) {${0}}",
+          "name": "anonymous function",
+          "trigger": "f"
+        },
+        {
+          "content": "function ${1:name}(${2:arguments}) {\n\t${0}\n }",
+          "name": "named function",
+          "trigger": "fn"
+        },
+        {
+          "content": "(function (${1:arguments}) {\n\t${0}\n})(${2});",
+          "name": "immediately-invoked function expression (IIFE)",
+          "trigger": "iife"
+        },
+        {
+          "content": "${1:fn}.apply(${2:this}, ${3:arguments})",
+          "name": "function apply",
+          "trigger": "fa"
+        },
+        {
+          "content": "${1:fn}.call(${2:this}, ${3:arguments})",
+          "name": "function call",
+          "trigger": "fc"
+        },
+        {
+          "content": "${1:fn}.bind(${2:this}, ${3:arguments})",
+          "name": "function bind",
+          "trigger": "fb"
+        },
+        {
+          "content": "(${1:arguments}) => ${2:statement}",
+          "name": "arrow function (ES6)",
+          "trigger": "af"
+        },
+        {
+          "content": "(${1:arguments}) => {\t${0}}",
+          "name": "arrow function with body (ES6)",
+          "trigger": "afb"
+        },
+        {
+          "content": "function (${1:arguments}) {\n\t${0}\n}",
+          "name": "generator function (ES6)",
+          "trigger": "afb"
+        }
+        ,
+        {
+          "content": "function ${1:name}(${1:arguments}) {\n\t${0}\n}",
+          "name": "named generator function (ES6)",
+          "trigger": "gfn"
         }
       ],
-      "name": "JavaScript"
+      "name": "Nova Turbo JavaScript"
     }
   ]
 }
