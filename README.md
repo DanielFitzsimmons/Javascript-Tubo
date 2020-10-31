@@ -1,7 +1,7 @@
-**JavaScript Turbo**🔥 A collection of **Javascript** clips for Nova.app. If you would like to make any suggestions, updates or changes please submit via the GitHub Repo.
+**JavaScript Turbo**🔥 A collection of **Javascript** clips for Nova. If you would like to make any suggestions, updates or changes please submit via the GitHub Repo.
 Happy Coding Dan👨🏻‍💻
 
-JavaScript Turbo is based on: https://github.com/extrabacon/atom-turbo-javascript
+JavaScript Turbo is based on: [Atom Turbo JavaScript](https://github.com/extrabacon/atom-turbo-javascript)
 
 ## Details
 
