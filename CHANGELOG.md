@@ -6,6 +6,6 @@ Initial release
 
 Minor bug fixes
 
-## Version 1.0.3
+## Version 1.0.4
 
-New Icon Design
+New Icon Design & bug fixes

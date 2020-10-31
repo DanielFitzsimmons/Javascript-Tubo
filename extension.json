@@ -3,7 +3,7 @@
   "name": "JavaScript Turbo",
   "organization": "Daniel Fitzsimmons",
   "description": "JavaScript Turbo - A collection of JavaScript Clips",
-  "version": "1.0.3",
+  "version": "1.0.4",
   "license": "MIT",
   "categories": ["clips"],
   "activationEvents": [
