@@ -171,12 +171,51 @@
           "content": "function (${1:arguments}) {\n\t${0}\n}",
           "name": "generator function (ES6)",
           "trigger": "afb"
-        }
-        ,
+        },
         {
           "content": "function ${1:name}(${1:arguments}) {\n\t${0}\n}",
           "name": "named generator function (ES6)",
           "trigger": "gfn"
+        },
+        {
+          "content": "[...Array(${1:length}).keys()]${0}",
+          "name": "sequence of 0..n",
+          "trigger": "seq"
+        },
+        {
+          "content": "${1:iterable}.forEach((${2:item}) => {\n\t${0}/n});",
+          "name": "forEach loop",
+          "trigger": "fe"
+        },
+        {
+          "content": "${1:iterable}.map((${2:item}) => {\n${0}\n\t});",
+          "name": "map function",
+          "trigger": "map"
+        },
+        {
+          "content": "${1:iterable}.reduce((${2:previous}, ${3:current}) => {\n\t${0}\n}${4:, initial});",
+          "name": "reduce function",
+          "trigger": "reduce"
+        },
+        {
+          "content": "${1:iterable}.find((${2:item}) => {\n\t${0}\n});",
+          "name": " ES6 find function",
+          "trigger": "find"
+        },
+        {
+          "content": "class ${1:name} {\n\tconstructor(${2:arguments}) {\n\t${0}\n\t}\n}",
+          "name": "class (ES6)",
+          "trigger": "c"
+        },
+        {
+          "content": "class ${1:name} extends ${2:base} {\n\tconstructor(${2:arguments}) {\n\t\tsuper(${2:arguments});\n\t${0}\n\t\t\t}\n}",
+          "name": "child class (ES6)",
+          "trigger": "cex"
+        },
+        {
+          "content": "constructor(${1:arguments}) {\n\tsuper(${1:arguments});${0}\n}",
+          "name": "class constructor (ES6)",
+          "trigger": "ctor"
         }
       ],
       "name": "Nova Turbo JavaScript"
