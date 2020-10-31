@@ -1,13 +1,19 @@
 {
-  "identifier": "daniel.NovaTurboJavaScript",
+  "identifier": "daniel.JavaScriptTurbo",
   "name": "JavaScript Turbo",
   "organization": "Daniel Fitzsimmons",
-  "description": "JavaScript Turbo - A collection of commands and snippets for JavaScript",
+  "description": "JavaScript Turbo - A collection of JavaScript Clips",
   "categories": ["languages", "clips", "completions"],
   "version": "1.0",
   "license": "MIT",
   "categories": ["clips"],
-  "activationEvents": ["onLanguage:JavaScript", "onWorkspaceContains:*.js"],
+  "activationEvents": [
+    "onLanguage:javascript",
+    "onLanguage:typescript",
+    "onLanguage:js",
+    "onLanguage:jsx",
+    "onLanguage:tsx"
+  ],
   "repository": "https://github.com/DanielFitzsimmons/nova-tubo-javascript/",
   "bugs": "https://github.com/DanielFitzsimmons/nova-tubo-javascript/issues"
 }
