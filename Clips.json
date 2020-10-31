@@ -90,13 +90,6 @@
           "trigger": "fl"
         },
         {
-          "content": "for (let ${1:key} in ${2:source}) {\n\tif (${2:source}.hasOwnProperty(${1:key})) {\n\t\t$0\n\t}\n}",
-          "name": "for in loop",
-          "scope": "editor",
-          "syntax": "javascript",
-          "trigger": "fi"
-        },
-        {
           "content": "for (let ${1:key} in ${2:source}) {\n\tif (${2:source}.hasOwnProperty(${1:key})) {\n\t$0\n\t}\n}",
           "name": "for in loop",
           "scope": "editor",
@@ -245,7 +238,7 @@
           "trigger": "fe"
         },
         {
-          "content": "${1:iterable}.map((${2:item}) => {\n$0\n\t});",
+          "content": "${1:iterable}.map((${2:item}) => {\n\t$0\n});",
           "name": "map function",
           "scope": "editor",
           "syntax": "javascript",

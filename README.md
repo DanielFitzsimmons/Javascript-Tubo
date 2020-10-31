@@ -89,7 +89,7 @@ for (let ${1:i} = 0, ${2:len} = ${3:iterable}.length; ${1:i} < ${2:len}; ${1:i}+
 ```js
 for (let ${1:key} in ${2:source}) {
   if (${2:source}.hasOwnProperty(${1:key})) {
-  ${0}
+	${0}
   }
 }
 ```
@@ -147,9 +147,9 @@ try {
 ```js
 switch (${1:expr}) {
   case ${2:value}:
-  return $0;
+	return $0;
   default:
-  return;
+	return;
 }
 ```
 
@@ -280,7 +280,7 @@ ${1:iterable}.find((${2:item}) => {
 ```js
 class ${1:name} {
   constructor(${2:arguments}) {
-  ${0}
+	${0}
   }
 }
 ```
@@ -290,8 +290,8 @@ class ${1:name} {
 ```js
 class ${1:name} extends ${2:base} {
   constructor(${2:arguments}) {
-  super(${2:arguments});
-  ${0}
+	super(${2:arguments});
+	${0}
   }
 }
 ```
