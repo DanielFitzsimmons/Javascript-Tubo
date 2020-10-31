@@ -381,6 +381,46 @@
           "content": "Array.from(${1:document}.querySelectorAll('${2:selector}'))",
           "name": "querySelectorAll",
           "trigger": "qsa"
+        },
+        {
+          "content": "function (err${1:, value}) {${0}}",
+          "name": "Node.js style callback",
+          "trigger": "cb"
+        },
+        {
+          "content": "require('${1:module}');",
+          "name": "require a module",
+          "trigger": "re"
+        },
+        {
+          "content": "exports.${1:name} = ${2:value};",
+          "name": "export member",
+          "trigger": "em"
+        },
+        {
+          "content": "module.exports = ${1:name};",
+          "name": "module.exports",
+          "trigger": "me"
+        },
+        {
+          "content": "${1:emitter}.on('${2:event}', (${3:arguments}) => {\n\t${0}\n});",
+          "name": "attach an event handler",
+          "trigger": "on"
+        },
+        {
+          "content": "function (req, res${1:, next}) {\n\t${0}\n}",
+          "name": "Express middleware",
+          "trigger": "xm"
+        },
+        {
+          "content": "function (err, req, res, next) {\n\t${0}\n}",
+          "name": "Express error handler",
+          "trigger": "xerr"
+        },
+        {
+          "content": "'use strict';",
+          "name": "use strict",
+          "trigger": "us"
         }
       ],
       "name": "Nova Turbo JavaScript"
