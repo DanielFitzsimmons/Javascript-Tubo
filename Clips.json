@@ -216,6 +216,51 @@
           "content": "constructor(${1:arguments}) {\n\tsuper(${1:arguments});${0}\n}",
           "name": "class constructor (ES6)",
           "trigger": "ctor"
+        },
+        {
+          "content": "${1:key}: ${2:'value'}",
+          "name": "key/value pair - JavaScript",
+          "trigger": ":"
+        },
+        {
+          "content": "'${1:key}': ${2:'value'}",
+          "name": "key/value pair - JSON",
+          "trigger": ":"
+        },
+        {
+          "content": "${1:method}(${2:arguments}) {\n\t${0}\n}",
+          "name": "method (ES6 syntax)",
+          "trigger": "m"
+        },
+        {
+          "content": "get ${1:property}() {\n\t${0}\n}",
+          "name": "getter (ES6 syntax)",
+          "trigger": "get"
+        },
+        {
+          "content": "set ${1:property}(${2:value}) {\n\t${0}\n}",
+          "name": "setter (ES6 syntax)",
+          "trigger": "set"
+        },
+        {
+          "content": "get ${1:property}() {\n\t${0}\n}\nset ${1:property}(${2:value}) {\n\n}",
+          "name": "setter (ES6 syntax)",
+          "trigger": "set"
+        },
+        {
+          "content": "${1:Class}.prototype.${2:methodName} = function (${3:arguments}) {\n\t${0}\n};",
+          "name": "prototype method (chainable)",
+          "trigger": "proto"
+        },
+        {
+          "content": "Object.assign(${1:dest}, ${2:source})",
+          "name": "Object assign",
+          "trigger": "a"
+        },
+        {
+          "content": "Object.assign({}, ${1:original}, ${2:source})",
+          "name": "Object assign copy (shallow clone)",
+          "trigger": "ac"
         }
       ],
       "name": "Nova Turbo JavaScript"
