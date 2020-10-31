@@ -1,6 +1,6 @@
-**JavaScript Turbo**🔥 A collection of **Javascript** clips for Nova. If you would like to make any suggestions, updates or changes please submit via the GitHub Repo.
-If you find these clips useful consider planting a tree for the world. [One Tree Planted](https://onetreeplanted.org/products/australia)🌳 \
-Happy Coding Dan👨🏻‍💻
+**JavaScript Turbo** 🔥 A collection of **Javascript** clips for Nova. If you would like to make any suggestions, updates or changes please submit via the GitHub Repo.
+If you find these clips useful consider planting a tree for the world. [One Tree Planted](https://onetreeplanted.org/products/australia) 🌳 \
+Happy Coding Dan 👨🏻‍💻
 
 JavaScript Turbo is based on: [Atom Turbo JavaScript](https://github.com/extrabacon/atom-turbo-javascript)
 
