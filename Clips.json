@@ -351,6 +351,36 @@
           "content": "setImmediate(() => {\n\t${0}\n});",
           "name": "setImmediate",
           "trigger": "sim"
+        },
+        {
+          "content": "${1:document}.addEventListener('${2:event}', ${3:ev} => {\n\t${0}\n});",
+          "name": "addEventListener",
+          "trigger": "ae"
+        },
+        {
+          "content": "${1:document}.getElementById('${2:id}')",
+          "name": "getElementById",
+          "trigger": "gi"
+        },
+        {
+          "content": "Array.from(${1:document}.getElementsByClassName('${2:class}'))",
+          "name": "getElementsByClassName",
+          "trigger": "gc"
+        },
+        {
+          "content": "Array.from(${1:document}.getElementsByTagName('${2:tag}'))",
+          "name": "getElementsByTagName",
+          "trigger": "gt"
+        },
+        {
+          "content": "${1:document}.querySelector('${2:selector}')",
+          "name": "querySelector",
+          "trigger": "qs"
+        },
+        {
+          "content": "Array.from(${1:document}.querySelectorAll('${2:selector}'))",
+          "name": "querySelectorAll",
+          "trigger": "qsa"
         }
       ],
       "name": "Nova Turbo JavaScript"
