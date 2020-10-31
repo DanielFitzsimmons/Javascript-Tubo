@@ -1,4 +1,4 @@
-**JavaScript Turbo** is a stop-gap measure till someone makes a better collection of clips for my JavaScript projects. A collection of **Javascript** clips for Nova.app. If you would like to make any suggestions, updates or changes please submit via the GitHub Repo. JavaScript Turbo is Based on: https://github.com/extrabacon/atom-turbo-javascript
+**JavaScript Turbo**🔥 is a stop-gap measure until someone makes a better collection of clips for my JavaScript projects. A collection of **Javascript** clips for Nova.app. If you would like to make any suggestions, updates or changes please submit via the GitHub Repo. JavaScript Turbo is based on: https://github.com/extrabacon/atom-turbo-javascript Happy Coding Dan👨🏻‍💻
 
 ## Details
 
