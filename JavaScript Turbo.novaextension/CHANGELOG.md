@@ -2,6 +2,6 @@
 
 Initial release
 
-## Version 1.0.1
+## Version 1.0.2
 
-Small bug fixes
+Minor bug fixes
