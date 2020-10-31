@@ -63,21 +63,6 @@
           "trigger": "import"
         },
         {
-          "content": "console.log($0);",
-          "name": "console.log",
-          "trigger": "cl"
-        },
-        {
-          "content": "console.warn($0);",
-          "name": "console.warn",
-          "trigger": "cw"
-        },
-        {
-          "content": "console.error($0);",
-          "name": "console.error",
-          "trigger": "ce"
-        },
-        {
           "content": "for (let $0 = 0; ${1:i} < ${2:length}.length; ${3:i}++) {\n  ${4:code}\n}",
           "name": "For Loop",
           "trigger": "for loop"
@@ -296,6 +281,76 @@
           "content": "import ${1:*} as ${2:name} from '${3:module}';",
           "name": "module import as",
           "trigger": "ima"
+        },
+        {
+          "content": "describe('${1:description}', function () {\n\t${0}\n});",
+          "name": "describe",
+          "trigger": "desc"
+        },
+        {
+          "content": "context('${1:description}', function () {\n\t${0}\n});",
+          "name": "context",
+          "trigger": "cont"
+        },
+        {
+          "content": "it('${1:description}', function () {\n\t${0}\n});",
+          "name": "synchronous 'it'",
+          "trigger": "its"
+        },
+        {
+          "content": "it('${1:description}', function (done) {\n\t${0}\n});",
+          "name": "asynchronous 'it'",
+          "trigger": "ita"
+        },
+        {
+          "content": "before(function () {\n\t${0}\n});",
+          "name": "before test suite",
+          "trigger": "bf"
+        },
+        {
+          "content": "beforeEach(function () {\n\t${0}\n});",
+          "name": "before each test",
+          "trigger": "bfe"
+        },
+        {
+          "content": "after(function () {\n\t${0}\n});",
+          "name": "after test suite",
+          "trigger": "aft"
+        },
+        {
+          "content": "afterEach(function () {\n\t${0}\n});",
+          "name": "after each test",
+          "trigger": "afe"
+        },
+        {
+          "content": "console.log($0);",
+          "name": "console.log",
+          "trigger": "cl"
+        },
+        {
+          "content": "console.warn($0);",
+          "name": "console.warn",
+          "trigger": "cw"
+        },
+        {
+          "content": "console.error($0);",
+          "name": "console.error",
+          "trigger": "ce"
+        },
+        {
+          "content": "setTimeout(() => {\n\t${0}\n}, ${1:delay});",
+          "name": "setTimeout",
+          "trigger": "st"
+        },
+        {
+          "content": "setInterval(() => {\n\t${0}\n}, ${1:delay});",
+          "name": "setInterval",
+          "trigger": "si"
+        },
+        {
+          "content": "setImmediate(() => {\n\t${0}\n});",
+          "name": "setImmediate",
+          "trigger": "sim"
         }
       ],
       "name": "Nova Turbo JavaScript"
