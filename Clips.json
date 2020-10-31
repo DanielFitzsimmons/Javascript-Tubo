@@ -1,0 +1,129 @@
+{
+  "clips": [
+    {
+      "children": [
+        {
+          "content": "var $0",
+          "name": "var",
+          "trigger": "var"
+        },
+        {
+          "content": "var $0 = ${:value}",
+          "name": "var name = value",
+          "trigger": "var"
+        },
+        {
+          "content": "var $0",
+          "name": "let",
+          "trigger": "let"
+        },
+        {
+          "content": "let $0 = ${:value}",
+          "name": "let name = value",
+          "trigger": "let"
+        },
+        {
+          "content": "var $0",
+          "name": "const",
+          "trigger": "const"
+        },
+        {
+          "content": "let $0 = ${:value}",
+          "name": "const name = value",
+          "trigger": "const"
+        },
+        {
+          "content": "if ($0) {\n  ${:code}\n}",
+          "name": "if",
+          "trigger": "if"
+        },
+        {
+          "content": "else {\n  $0\n}",
+          "name": "else",
+          "trigger": "else"
+        },
+        {
+          "content": "if ($0) {\n  ${1:Code}\n} else {\n ${2:Code}\n}",
+          "name": "if else",
+          "trigger": "ife"
+        },
+        {
+          "content": "else if ($0) {\n  ${1:code}\n}",
+          "name": "else if",
+          "trigger": "else if"
+        },
+        {
+          "content": "$0.map(${:item}) => {\n  ${:code}\n});",
+          "name": "map",
+          "trigger": "map"
+        },
+        {
+          "content": "import $0 from '${1:module}';",
+          "name": "import from",
+          "trigger": "import"
+        },
+        {
+          "content": "console.log($0);",
+          "name": "console.log",
+          "trigger": "cl"
+        },
+        {
+          "content": "console.warn($0);",
+          "name": "console.warn",
+          "trigger": "cw"
+        },
+        {
+          "content": "console.error($0);",
+          "name": "console.error",
+          "trigger": "ce"
+        },
+        {
+          "content": "for (let $0 = 0; ${1:i} < ${2:length}.length; ${3:i}++) {\n  ${4:code}\n}",
+          "name": "For Loop",
+          "trigger": "for loop"
+        },
+        {
+          "content": "class ${1:name} extends ${2:base} {\n constructor(${2:arguments})\n  {super(${2:arguments});$0}\n }",
+          "name": "child class",
+          "trigger": "cex"
+        },
+        {
+          "content": "for (let ${1:i} = 0, ${2:len} = ${3:iterable}.length; ${1:i} < ${2:len}; ${1:i}++) {\n\t$0\n}",
+          "name": "for loop",
+          "trigger": "fl"
+        },
+        {
+          "content": "for (let ${1:key} in ${2:source}) {\n\tif (${2:source}.hasOwnProperty(${1:key})) {\n\t$0\n\t}\n}",
+          "name": "for in loop",
+          "trigger": "fi"
+        },
+        {
+          "content": "for (let ${1:key} of ${2:source}) {\n\t${0}\n}",
+          "name": "for of loop",
+          "trigger": "fo"
+        },
+        {
+          "content": "while (${1:condition}) {\n\n\t${0}\n}",
+          "name": "wl",
+          "trigger": "wl"
+        },
+        {
+          "content": "try {\n\t${0}\n} catch (${1:err}) {\n}",
+          "name": "try/catch",
+          "trigger": "tc"
+        },
+        {
+          "content": "try {\n\t${0}\n} catch (${1:err}) {\n}",
+          "name": "try/finally",
+          "trigger": "tf"
+        },
+        {
+          "content": "try {\n\t${0}\n} catch (${1:err}) {\n\t} finally {\n\t\n}",
+          "name": "try/catch/finally",
+          "trigger": "tcf"
+        }
+      ],
+      "name": "JavaScript"
+    }
+  ]
+}
