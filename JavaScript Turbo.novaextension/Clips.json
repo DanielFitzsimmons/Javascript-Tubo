@@ -22,7 +22,7 @@
           "trigger": "var"
         },
         {
-          "content": "var $0",
+          "content": "let $0",
           "name": "let",
           "scope": "editor",
           "syntax": "javascript",
@@ -36,14 +36,14 @@
           "trigger": "let"
         },
         {
-          "content": "var $0",
+          "content": "const $0",
           "name": "const",
           "scope": "editor",
           "syntax": "javascript",
           "trigger": "const"
         },
         {
-          "content": "let $0 = ${:value}",
+          "content": "const $0 = ${:value}",
           "name": "const name = value",
           "scope": "editor",
           "syntax": "javascript",
