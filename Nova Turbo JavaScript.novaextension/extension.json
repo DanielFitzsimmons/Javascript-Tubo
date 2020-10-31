@@ -1,8 +1,8 @@
 {
     "identifier": "daniel.NovaTurboJavaScript",
-    "name": "Nova Turbo JavaScript",
+    "name": "JavaScript Turbo",
     "organization": "Daniel Fitzsimmons",
-    "description": "Nova Turbo JavaScript - A collection of commands and ES6-ready snippets",
+    "description": "JavaScript Turbo - A collection of commands and ES6-ready snippets",
     "categories": ["languages", "clips", "completions"],
     "version": "1.0",
     "license": "MIT",

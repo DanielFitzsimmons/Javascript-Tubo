@@ -1,8 +1,8 @@
-**Nova Turbo JavaScript** A collection of commands and ES6-ready snippets for https://nova.app optimised **Javascript and Typescript**. Based on: https://github.com/extrabacon/atom-turbo-javascript
+**JavaScript Turbo** A collection of commands and ES6-ready snippets for https://nova.app optimised **Javascript and Typescript**. Based on: https://github.com/extrabacon/atom-turbo-javascript
 
 ## Details
 
-# nova-tubo-javascript (Beta)
+# javascript-turbo (Beta)
 
 ### Declarations
 
