@@ -261,6 +261,41 @@
           "content": "Object.assign({}, ${1:original}, ${2:source})",
           "name": "Object assign copy (shallow clone)",
           "trigger": "ac"
+        },
+        {
+          "content": "new Promise((resolve, reject) => {\n\t${0}\n})",
+          "name": "new Promise (ES6)",
+          "trigger": "p"
+        },
+        {
+          "content": "${1:promise}.then(${2:value} => {\n\t${0}\n});",
+          "name": "Promise.then",
+          "trigger": "then"
+        },
+        {
+          "content": "${1:promise}.catch(${2:err} => {\n\t${0}\n});",
+          "name": "Promise.catch",
+          "trigger": "catch"
+        },
+        {
+          "content": "export ${1:member};",
+          "name": "module export",
+          "trigger": "ex"
+        },
+        {
+          "content": "export default ${1:member};",
+          "name": "module default export",
+          "trigger": "exd"
+        },
+        {
+          "content": "import ${1:*} from '${2:module}';",
+          "name": "module import",
+          "trigger": "im"
+        },
+        {
+          "content": "import ${1:*} as ${2:name} from '${3:module}';",
+          "name": "module import as",
+          "trigger": "ima"
         }
       ],
       "name": "Nova Turbo JavaScript"
