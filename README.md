@@ -702,12 +702,28 @@ function (err, req, res, next) {
 }
 ```
 
-#### `er⇥` Express route
+#### `xer⇥` Express route
 
 ```js
 ${1:express/router}.${2:request}('/', async(req, res, next) => {
   res.send();
 });
+```
+
+#### `xes⇥` Express Server
+
+```js
+const express = require("express");
+const app = express();
+const helmet = require("helmet");
+const bodyParser = require("body-parser");
+
+app.get("/", (req, res, next) => {
+  return res.send("Hello, I am a Web Server");
+});
+
+const port = process.env.PORT || 3000;
+app.listen(port, () => console.log(`Listening on port ${port}...`));
 ```
 
 ### Miscellaneous

@@ -584,7 +584,7 @@
         {
           "content": "${1:express/router}.${2:request}('/', async(req, res, next) => {\n  res.send();\n});",
           "name": "express route",
-          "trigger": "er"
+          "trigger": "xer"
         },
         {
           "content": "require('${1:module}');",
@@ -627,6 +627,13 @@
           "scope": "editor",
           "syntax": "javascript",
           "trigger": "xerr"
+        },
+        {
+          "content": "const express = require('express');\n const app = express();\n const helmet = require('helmet');\n const bodyParser = require('body-parser');\n app.get('/', (req, res, next) => {\n\t return res.send('Hello, I am a Web Server');\n });\n \n const port = process.env.PORT || 3000;\n app.listen(port, () => console.log(`Listening on port ${port}...`));",
+          "name": "Express Server",
+          "scope": "editor",
+          "syntax": "javascript",
+          "trigger": "xes"
         }
       ],
       "name": "Node"
