@@ -98,7 +98,7 @@ for (let ${1:key} in ${2:source}) {
 }
 ```
 
-#### `fo⇥` for of loop (ES6)
+#### `fo⇥` for of loop
 
 ```js
 for (let ${1:key} of ${2:source}) {
@@ -199,13 +199,13 @@ ${1:fn}.call(${2:this}, ${3:arguments})
 ${1:fn}.bind(${2:this}, ${3:arguments})
 ```
 
-#### `af⇥` arrow function (ES6)
+#### `af⇥` arrow function
 
 ```js
 (${1:arguments}) => ${2:statement}
 ```
 
-#### `afb⇥` arrow function with body (ES6)
+#### `afb⇥` arrow function with body
 
 ```js
 (${1:arguments}) => {
@@ -213,7 +213,7 @@ ${1:fn}.bind(${2:this}, ${3:arguments})
 }
 ```
 
-#### `gf⇥` generator function (ES6)
+#### `gf⇥` generator function
 
 ```js
 function* (${1:arguments}) {
@@ -221,7 +221,7 @@ function* (${1:arguments}) {
 }
 ```
 
-#### `gfn⇥` named generator function (ES6)
+#### `gfn⇥` named generator function
 
 ```js
 function* ${1:name}(${1:arguments}) {
@@ -269,7 +269,7 @@ ${1:iterable}.filter((${2:item}) => {
 });
 ```
 
-#### `find⇥` ES6 find function
+#### `find⇥` find function
 
 ```js
 ${1:iterable}.find((${2:item}) => {
@@ -279,7 +279,7 @@ ${1:iterable}.find((${2:item}) => {
 
 ### Objects and classes
 
-#### `c⇥` class (ES6)
+#### `c⇥` class
 
 ```js
 class ${1:name} {
@@ -289,7 +289,7 @@ class ${1:name} {
 }
 ```
 
-#### `cex⇥` child class (ES6)
+#### `cex⇥` child class
 
 ```js
 class ${1:name} extends ${2:base} {
@@ -300,7 +300,7 @@ class ${1:name} extends ${2:base} {
 }
 ```
 
-#### `ctor` class constructor (ES6)
+#### `ctor` class constructor
 
 ```js
 constructor(${1:arguments}) {
@@ -322,7 +322,7 @@ JSON:
 "${1:key}": ${2:"value"}
 ```
 
-#### `m⇥` method (ES6 syntax)
+#### `m⇥` method
 
 ```js
 ${1:method}(${2:arguments}) {
@@ -330,7 +330,7 @@ ${1:method}(${2:arguments}) {
 }
 ```
 
-#### `get⇥` getter (ES6 syntax)
+#### `get⇥` getter
 
 ```js
 get ${1:property}() {
@@ -338,7 +338,7 @@ get ${1:property}() {
 }
 ```
 
-#### `set⇥` setter (ES6 syntax)
+#### `set⇥` setter
 
 ```js
 set ${1:property}(${2:value}) {
@@ -346,7 +346,7 @@ set ${1:property}(${2:value}) {
 }
 ```
 
-#### `gs⇥` getter and setter (ES6 syntax)
+#### `gs⇥` getter and setter
 
 ```js
 get ${1:property}() {
@@ -421,7 +421,7 @@ return 0;
 return -1;
 ```
 
-#### `rp⇥` return Promise (ES6)
+#### `rp⇥` return Promise
 
 ```js
 return new Promise((resolve, reject) => {
@@ -439,7 +439,7 @@ return (
 
 ### Promises
 
-#### `p⇥` new Promise (ES6)
+#### `p⇥` new Promise
 
 ```js
 new Promise((resolve, reject) => {
@@ -620,18 +620,14 @@ ${1:document}.getElementById('${2:id}')
 #### `gc⇥` getElementsByClassName
 
 ```js
-Array.from(${1:document}.getElementsByClassName('${2:class}'))
+${1:document}.getElementsByClassName('${2:class}')
 ```
-
-`Array.from` polyfill required for ES5
 
 #### `gt⇥` getElementsByTagName
 
 ```js
-Array.from(${1:document}.getElementsByTagName('${2:tag}'))
+${1:document}.getElementsByTagName('${2:tag}')
 ```
-
-`Array.from` polyfill required for ES5
 
 #### `qs⇥` querySelector
 
@@ -642,10 +638,19 @@ ${1:document}.querySelector('${2:selector}')
 #### `qsa⇥` querySelectorAll
 
 ```js
-Array.from(${1:document}.querySelectorAll('${2:selector}'))
+${1:document}.querySelectorAll('${2:selector}')
 ```
 
-`Array.from` polyfill required for ES5
+#### `ne⇥` new element
+
+```js
+const $0 =  document.createElement('${1:tag}');
+$0.className= '${3:class name}';
+$0.id = 'hello1';
+$0.setAttribute('${4:attribute}', '${5:value});
+var textNode = document.createTextNode('${6:text}');
+$0.appendChild(textNode);
+```
 
 ### Node.js specifics
 
@@ -695,6 +700,14 @@ function (req, res${1:, next}) {
 function (err, req, res, next) {
   ${0}
 }
+```
+
+#### `er⇥` Express route
+
+```js
+${1:express/router}.${2:request}('/', async(req, res, next) => {
+  res.send();
+});
 ```
 
 ### Miscellaneous

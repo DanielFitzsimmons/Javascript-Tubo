@@ -532,14 +532,14 @@
           "trigger": "gi"
         },
         {
-          "content": "Array.from(${1:document}.getElementsByClassName('${2:class}'))",
+          "content": "${1:document}.getElementsByClassName('${2:class}')",
           "name": "getElementsByClassName",
           "scope": "editor",
           "syntax": "javascript",
           "trigger": "gc"
         },
         {
-          "content": "Array.from(${1:document}.getElementsByTagName('${2:tag}'))",
+          "content": "${1:document}.getElementsByTagName('${2:tag}')",
           "name": "getElementsByTagName",
           "scope": "editor",
           "syntax": "javascript",
@@ -553,7 +553,7 @@
           "trigger": "qs"
         },
         {
-          "content": "Array.from(${1:document}.querySelectorAll('${2:selector}'))",
+          "content": "${1:document}.querySelectorAll('${2:selector}')",
           "name": "querySelectorAll",
           "scope": "editor",
           "syntax": "javascript",
