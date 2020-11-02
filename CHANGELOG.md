@@ -9,3 +9,7 @@ Minor bug fixes
 ## Version 1.0.4
 
 New Icon Design & bug fixes
+
+## Version 1.0.5
+
+Clips updated, new element clip added, new express server clip & new express route clip
