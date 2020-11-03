@@ -192,28 +192,28 @@
         },
         {
           "content": "(${1:arguments}) => ${2:statement}",
-          "name": "arrow function (ES6)",
+          "name": "arrow function ",
           "scope": "editor",
           "syntax": "javascript",
           "trigger": "af"
         },
         {
           "content": "(${1:arguments}) => {\t$0}",
-          "name": "arrow function with body (ES6)",
+          "name": "arrow function with body ",
           "scope": "editor",
           "syntax": "javascript",
           "trigger": "afb"
         },
         {
           "content": "function (${1:arguments}) {\n\t$0\n}",
-          "name": "generator function (ES6)",
+          "name": "generator function ",
           "scope": "editor",
           "syntax": "javascript",
           "trigger": "afb"
         },
         {
           "content": "function ${1:name}(${1:arguments}) {\n\t$0\n}",
-          "name": "named generator function (ES6)",
+          "name": "named generator function ",
           "scope": "editor",
           "syntax": "javascript",
           "trigger": "gfn"
@@ -265,21 +265,21 @@
       "children": [
         {
           "content": "class ${1:name} {\n\tconstructor(${2:arguments}) {\n\t$0\n\t}\n}",
-          "name": "class (ES6)",
+          "name": "class ",
           "scope": "editor",
           "syntax": "javascript",
           "trigger": "c"
         },
         {
           "content": "class ${1:name} extends ${2:base} {\n\tconstructor(${2:arguments}) {\n\t\tsuper(${2:arguments});\n\t$0\n\t\t\t}\n}",
-          "name": "child class (ES6)",
+          "name": "child class ",
           "scope": "editor",
           "syntax": "javascript",
           "trigger": "cex"
         },
         {
           "content": "constructor(${1:arguments}) {\n\tsuper(${1:arguments});$0\n}",
-          "name": "class constructor (ES6)",
+          "name": "class constructor ",
           "scope": "editor",
           "syntax": "javascript",
           "trigger": "ctor"
@@ -354,7 +354,7 @@
       "children": [
         {
           "content": "new Promise((resolve, reject) => {\n\t$0\n})",
-          "name": "new Promise (ES6)",
+          "name": "new Promise ",
           "scope": "editor",
           "syntax": "javascript",
           "trigger": "p"
@@ -629,7 +629,7 @@
           "trigger": "xerr"
         },
         {
-          "content": "const express = require('express');\n const app = express();\n const helmet = require('helmet');\n const bodyParser = require('body-parser');\n app.get('/', (req, res, next) => {\n\t return res.send('Hello, I am a Web Server');\n });\n \n const port = process.env.PORT || 3000;\n app.listen(port, () => console.log(`Listening on port ${port}...`));",
+          "content": "const express = require('express');\n const app = express();\n const helmet = require('helmet');\nconst bodyParser = require('body-parser');\napp.get('/', (req, res, next) => {\n\t return res.send('Hello, I am a Web Server');\n });\n \nconst port = process.env.PORT || 3000;\napp.listen(port, () => console.log(`Listening on port ${port}...`));",
           "name": "Express Server",
           "scope": "editor",
           "syntax": "javascript",
