@@ -132,7 +132,7 @@
           "trigger": "tcf"
         },
         {
-          "content": "switch (${1:expr}) {\n\t case ${2:value} \n\t return $0;\n default:\n\t return;\n }",
+          "content": "switch (${1:expr}) {\n\tcase ${2:value} \n\t\treturn $0;\n\tdefault:\n\t\treturn;\n }",
           "name": "switch case",
           "scope": "editor",
           "syntax": "javascript",
@@ -151,7 +151,7 @@
           "trigger": "f"
         },
         {
-          "content": "function ${1:name}(${2:arguments}) {\n\t$0\n }",
+          "content": "function ${1:name}(${2:arguments}) {\n\t$0\n}",
           "name": "named function",
           "scope": "editor",
           "syntax": "javascript",
@@ -160,6 +160,7 @@
         {
           "content": "async function ${1:name}(${2:arguments}) {\n  await $0\n}",
           "name": "async function",
+          "syntax": "javascript",
           "trigger": "af"
         },
         {
@@ -231,7 +232,7 @@
           "trigger": "seq"
         },
         {
-          "content": "${1:iterable}.forEach((${2:item}) => {\n\t$0/n});",
+          "content": "${1:iterable}.forEach((${2:item}) => {\n\t$0\n);",
           "name": "forEach loop",
           "scope": "editor",
           "syntax": "javascript",
@@ -253,7 +254,7 @@
         },
         {
           "content": "${1:iterable}.find((${2:item}) => {\n\t$0\n});",
-          "name": " ES6 find function",
+          "name": "find function",
           "scope": "editor",
           "syntax": "javascript",
           "trigger": "find"
@@ -271,7 +272,7 @@
           "trigger": "c"
         },
         {
-          "content": "class ${1:name} extends ${2:base} {\n\tconstructor(${2:arguments}) {\n\t\tsuper(${2:arguments});\n\t$0\n\t\t\t}\n}",
+          "content": "class ${1:name} extends ${2:base} {\n\tconstructor(${2:arguments}) {\n\t\tsuper(${2:arguments});\n\t\t$0\n\t}\n}",
           "name": "child class ",
           "scope": "editor",
           "syntax": "javascript",
@@ -306,22 +307,29 @@
           "trigger": "m"
         },
         {
+          "content": "Object.assign({}, ${1:original}, ${2:source})",
+          "name": "Object assign copy (shallow clone)",
+          "scope": "editor",
+          "syntax": "javascript",
+          "trigger": "ac"
+        },
+        {
           "content": "get ${1:property}() {\n\t$0\n}",
-          "name": "getter (ES6 syntax)",
+          "name": "getter",
           "scope": "editor",
           "syntax": "javascript",
           "trigger": "get"
         },
         {
           "content": "set ${1:property}(${2:value}) {\n\t$0\n}",
-          "name": "setter (ES6 syntax)",
+          "name": "setter",
           "scope": "editor",
           "syntax": "javascript",
           "trigger": "set"
         },
         {
           "content": "get ${1:property}() {\n\t$0\n}\nset ${1:property}(${2:value}) {\n\n}",
-          "name": "setter (ES6 syntax)",
+          "name": "setter",
           "scope": "editor",
           "syntax": "javascript",
           "trigger": "set"
@@ -339,13 +347,6 @@
           "scope": "editor",
           "syntax": "javascript",
           "trigger": "a"
-        },
-        {
-          "content": "Object.assign({}, ${1:original}, ${2:source})",
-          "name": "Object assign copy (shallow clone)",
-          "scope": "editor",
-          "syntax": "javascript",
-          "trigger": "ac"
         }
       ],
       "name": "Objects and classes"
@@ -629,7 +630,7 @@
           "trigger": "xerr"
         },
         {
-          "content": "const express = require('express');\n const app = express();\n const helmet = require('helmet');\nconst bodyParser = require('body-parser');\napp.get('/', (req, res, next) => {\n\t return res.send('Hello, I am a Web Server');\n });\n \nconst port = process.env.PORT || 3000;\napp.listen(port, () => console.log(`Listening on port ${port}...`));",
+          "content": "const express = require('express');\nconst app = express();\nconst helmet = require('helmet');\nconst bodyParser = require('body-parser');\napp.get('/', (req, res, next) => {\n\treturn res.send('Hello, I am a Web Server');\n});\n \nconst port = process.env.PORT || 3000;\napp.listen(port, () => console.log(`Listening on port $port...`));",
           "name": "Express Server",
           "scope": "editor",
           "syntax": "javascript",
